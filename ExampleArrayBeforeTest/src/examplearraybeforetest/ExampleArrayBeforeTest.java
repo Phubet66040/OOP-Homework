@@ -4,17 +4,30 @@
  */
 package examplearraybeforetest;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author ASUS_Vivobook
  */
 public class ExampleArrayBeforeTest {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int[][] i = new int[3][3];
+        for (int o = 0; o < i.length; o++) {
+            for (int j = 0; j < i.length; j++) {
+                i[o][j] = o + j;
+
+            }
+        }
+        for (int o = 0; o < i.length; o++) {
+            for (int j = 0; j < i.length; j++) {
+                System.out.print(" "+ i[o][j]);
+
+            }
+            System.out.println(" ");
+        }
+
     }
-    
+
 }
